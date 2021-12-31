@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<video id="bg69" src="assets/vid/bg-cube.mp4" autoplay loop playsinline muted></video>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Divyani Panda - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!--<link href="assets/img/logo1.png" rel="icon">-->
+  <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAuxJREFUaEPtmU9u1DAUxp+DWFOWoIzo3KA9wERphj3lBLQnoJyAcgLgBJQTUPY0DZkDFE7QQRPBsu0aEVcZOhBix36fHQuN1Kz95/3es9/3jUfQmn9izeOnW4D/XUHnClTZZI9IvCaiDU+Iy0jI/Ycns2OXdTwAkosBgm/FLPfjfHaEQjgB3GT/HbqZfTwO4QSwmCbHQtITe0AuIzAIGOBHmm7+iupzc2i8IPoryZvfxAADLLLkUBC9tOeWF4QvBAxQZUmT/U07QDMiPAQEsHicpqKuT3nBr0aFhYAAqp3kiAQ9wwDCVoINcJ6mG3ejuun9jl+YSrABwvV+fj4iIZ92FZsPME3OSNIWf7sgI+dxXo7bK7MAqjTdoqg+CxIStKj8FuezfzogDyBL3hDRc2ivMIPfxnl5gFcgG8a43amj8YOimHPYtIpfR9txUXyBAIa6vFLQx9FJucsJvhmjKr74GueflTtoPUJDGTddBzHBqIqvb8NGAJ5x4+RUvXymWTrF/1lH98dFcdmdZwTgGzcbhHwR57OmEbA+RfElvY9Pyz3dZCMAZtz6Y+vLnm6GTvFlFO2MPhUFBOBm3DRbGLKnC0htGubj11sBd+PWCUvT+oyXt6P4kujVKC8P++ZoAfyN22o7fevrC0an+Dbt0AIM1fu5P2hWQFVH8TnaoQcYxrhdxXkJvRlViuLbLbgCMKBxU3yLWbiWD2XtpxpWAlSAgYyb7ex2YTSKz0qADsD7xY1zdtsAXOPG0oEqm8yJxCOWZPYMQn0P17ixAL5PJ7u1FB/cATDf0+zDNW4sgN8LKhcK4MF8D2Lc2AA+EIjvWe7TfaoBrYfFzIGVADdHjRtUgb/qCECgvkc5qvj9sf4i4x8nzPcs1wWNm1MF+JWwy347ABfj5gXArwTQsFpDUfH743fR7fxarGk3rILOAIEqwTJu3keovcCNYjf/Kt5Dq9gZf0UkD1z+oWzWYXUhzwCDTr8FCJpexuJrX4FrNn+2QBtY10gAAAAASUVORK5CYII=" rel="icon"/>
+  <!--<link href="assets/img/logo.png" rel="apple-touch-icon">-->
+  <!--<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhtJREFUSEvFlu1100AQRe+IAkgqwFRgqQArogJCBSQVECrAqSChApwKCBUgywVIrgBTAdCAlqNItlbSfjnH58Q/7bdzZ3bnzVh4oY+8EJcgcMniMkLmIUnWsEsoHnxaL7gky4T6py/Q8HdZxayvXWe84C3pSsHH48CN2g13gkuyM6H+BZyFVFSSxUKdA69bvR3uAS+uBPlmrtYcNBTuBFdcVKAcTfV8uBVcks26a/Y8r6xq6tVY9AqJFdz33w+TdIDTe4FPxzeV/YRCXSdsnpK0givSv32TnAbvBTcDQ5Dvgbh/iujSpo2olwougEY3S8ibgswVb0kfFbwPASv4mlDcmLSdHf90oIc5xdVeN7nq8KZqQyiitwn5zgxe3Ahy1+neJeSNx1uHjw+U9GJfxQLrOUVm0/V2VL9jNjNdNwFXLHYgb3zQtgr1IWHzaLnmZoqVne5zwkaz1qji4xbCtAo9AX3Gm55jUPExC0HBbUKxtF9za0eBH3OKSdcfwPaFYA6tiM731jD0yWHG255DA7sWwjC0wMAaY/CWNN97N6YYbbZRV5eEgxXRwBo6WLejy+PPeGPZxqxj29uWpEuBLz6PT+zkazB93prgvR3dCRqXhAM+mLeGpjrMeF+C1u1kgrverElCO+NM0DgybUMgZJJpc9jZ9V7wqIpgtqvrteT88RqrgQyGvP2Uqmzz27kk/GmcRuH9Q38azDTKf7Vn7x/eSh8OAAAAAElFTkSuQmCC" rel="icon">-->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/sandbox.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img-2.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Divyani Panda</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/7divs7" target="_blanks" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/divyani-panda-5a8345194/" target="_blanks" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="skype:divyani.panda@gmail.com?add" target="_blanks" class="skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.researchgate.net/profile/Divyani-Panda-2" target="_blanks" class="research-gate"><i class="lab la-researchgate"></i></a>
+          <a href="mailto:divyani.panda@gmail.com" target="_blanks" class="gmail"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user-circle"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-notepad"></i> <span>Projects</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Publications</span></a></li>
+          <li><a href="#achievements" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Achievements</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-message-dots"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+
+    <div id="monster-peekaboo">
+      <img src="assets/img/monster.png" width="100vw" height="auto">
+    </div>
+
+    <div id="monster-slide">
+      <img src="assets/img/monster.png" width="100vw" height="auto">
+    </div>
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      
+      <div class="row justify-content-end">
+        <div class="col-lg-10">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div id="vid1" class="align-items-left">
+                  <video autoplay muted loop id="myVideo" class="d-block w-100" alt="...">
+                    <source src="assets/vid/mazeGA.mp4" type="video/mp4"></video>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Maze Walker in Unity3D</h5>
+                  <p>Bots learn how to traverse through a maze using Genetic Algorithm</p>
+                </div>
+              </div>
+              <div class="carousel-item second">
+                <div id="vid1" class="align-items-left">
+                  <video autoplay muted loop id="myVideo" class="d-block w-100" alt="...">
+                    <source src="assets/vid/platformGA.mp4" type="video/mp4"></video>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Stay on Platform in Unity3D</h5>
+                  <p>Bots learn not to leave the platform using Genetic Algorithm</p>
+                </div>
+              </div>
+              <div class="carousel-item third">
+                <div id="vid1" class="align-items-left">
+                  <video autoplay muted loop id="myVideo" class="d-block w-100" alt="...">
+                    <source src="assets/vid/pongANN.mp4" type="video/mp4"></video>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pong AI</h5>
+                  <p>Trained using Neural Networks and having the ANNs play against each other</p>
+                </div>
+              </div>
+              <div class="carousel-item fourth">
+                <div id="vid1" class="align-items-left">
+                  <video autoplay muted loop id="myVideo" class="d-block w-100" alt="...">
+                    <source src="assets/vid/goap.mp4" type="video/mp4"></video>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>GOAP - Basic Working Hospital</h5>
+                  <p>NPCs AI created using Goal Oriented Action Planning (GOAP)</p>
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Me!</h2>
+          <p>My love for developing games can be traced back to my college days where my curiosity about game mechanics drove me to build ones of my own, bringing me unfathomable joy to watch the virtual world I created come to life. Game development has always been a passion that I would love to learn more about and explore, and eventually for which I can hone my skills in a professional environment.</p>
+          <p><br>I am currently an Advisory Analyst in Deloitte USI, operating in the Cyber and Strategic Risk services. In addition to my passion for games, I also developed an interest in Vulnerability Assessment and Penetration Testing (VAPT) and Cloud Computing during my time at Deloitte, where my project focused on DAST and penetration testing. I also had the opportunity to expand my knowledge about public cloud services by being a GCP-Certified Associate Cloud Engineer.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Penetration Tester &amp; Game Development Enthusiast.</h3>
+            <p class="fst-italic">
+              An avid learner, seeking opportunities that would assist me in augmenting my knowledge in the fields of Game Development, Artificial Intelligence, Cloud Computing and Penetration Testing.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>19 August 1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(+91) 9110498134</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bangalore, India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>College:</strong> <span>Vellore Institute of Technology, Vellore</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech. in EEE</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>divyani.panda@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Through various projects spanning across multiple technical domains, I have acquired a deep insight into the areas of electronics, programming and application security. Some of my projects include developing games in HTML, JavaScript and Unity3D. I have also integrated Genetic Algorithms and Neural Networks in 3D environments to develop autonomous NPCs which can eventually be incorporated into larger video games. I also had the opportunity to delve into the security testing of web applications by working with Burp Suite. Additionally, my research work includes publications on cryptography and electric vehicles.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box proj">
+              <i class="bi bi-pencil-square"></i>
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box pub">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Research Publications</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box ach">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Achievements</strong></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Pacman Section ======= -->
+    <section id="pacman-anim" class="pacman-anim">
+      <div class="path">
+        <div class="pacman"></div>
+        <div class="ghost">
+          <div class="eyes"></div>
+          <div class="skirt"></div>
+        </div>
+      </div>
+    </section><!-- End Pacman Section -->
+
+    <!-- ======= Interests Section ======= -->
+    <section id="interests" class="interests">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Interests</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon gd"><i class="bi bi-joystick"></i></div>
+            <h4 class="title">Game Development</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon ai"><i class="bi bi-robot"></i></div>
+            <h4 class="title">Artificial Intelligence</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon wa"><i class="bi bi-shield-fill-check"></i></div>
+            <h4 class="title">Web Application Security</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon ga"><i class="bi bi-people"></i></div>
+            <h4 class="title">Genetic Algorithms</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon nn"><i class="bx bx-network-chart"></i></div>
+            <h4 class="title">Neural Networks</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon cry"><i class="bi bi-key"></i></div>
+            <h4 class="title">Cryptography</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon el"><i class="bi bi-lightning-fill"></i></div>
+            <h4 class="title">Electronics</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon gam"><i class="bi bi-controller"></i></div>
+            <h4 class="title">Gaming</h4>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Unity 3D <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C/C++ <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C# <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Burp Suite <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <button class="button" onclick="viewResume()">View My Resume</button>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Divyani Panda</h4>
+              <p><em>Innovative and deadline-driven Security Analyst & Game Development Enthusiast with experience in Application Security Testing and 2+ years of experience developing games with Unity3D.</em></p>
+              <ul>
+                <li>Bangalore, Karnataka, India</li>
+                <li>(+91) 9110498134</li>
+                <li>divyani.panda@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Technology</h4>
+              <p>Electrical and Electronics Engineering</p>
+              <h5>2017 - 2021</h5>
+              <p><em>Vellore Institute of Technology, Vellore, India</em></p>
+              <p>CGPA: 9.39</p>
+              <ul>
+                <li>Microprocessor and Microcontroller</li>
+                <li>Advanced Control Theory</li>
+                <li>Applied Numerical Methods</li>
+                <li>Digital Signal Processing</li>
+                <li>Engineering Optimization</li>
+                <li>Rapid Prototyping with FPGAs</li>
+                <li>Statistics for Engineer</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Higher Secondary Education (CBSE)</h4>
+              <h5>2016 - 2017</h5>
+              <p><em>CMR National Public School, Bangalore, India</em></p>
+              <p>Class 12 Board (AISSCE - Science): 94%</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Cyber Risk Advisory Analyst</h4>
+              <h5>July 2021 - Present</h5>
+              <p><em>Deloitte USI Risk and Financial Advisory</em></p>
+              <ul>
+                <li>Application Security Testing and Vulnerability Management.</li>
+                <li>Lead in the DAST and Manual Penetration Testing activities for internal and customer-facing web applications in a client project.</li>
+                <li>Worked and collaborated with the 8+ members of the security team focused on different aspects of the project such as Application Testing, IAM, SIEM, Compliance.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Technology Intern</h4>
+              <h5>Jan 2021 - April 2021</h5>
+              <p><em>Deloitte USI Risk and Financial Advisory</em></p>
+              <ul>
+                <li>Worked on SAP Commerce Cloud, one of the technology stacks used in the client project. Performed research on the architectures and implementation of SAP CC as a backend for the e-commerce website. Acquired knowledge about the various services offered by SAP CC during deployment of a commerce application, such as storefront, backoffice applications, searching and indexing, logging, and monitoring.</li>
+                <li>Performed client user story reviews and provided necessary security comments.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Development Intern</h4>
+              <h5>May 2019 - June 2019</h5>
+              <p><em>ALUK Building Systems Pvt. Ltd.</em></p>
+              <ul>
+                <li>Worked on the upgradation and development of ALUK in-house Software for Structural Analysis and Design of Aluminium windows and curtain walls under static loading, such as incorporating new user-friendly features along with  visualizations of the bending behavior of beams.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      
+      <div class="container">
+        <div class="section-title">
+          <h2>Personal Projects - <i>Highlights</i></h2> 
+          <p><i>To view all my projects, please visit my GitHub: <a href="https://github.com/7divs7" target="_blanks">7divs7</a></i></p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-Unity">Unity</li>
+              <li data-filter=".filter-JS">JavaScript</li>
+              <li data-filter=".filter-Python">Python</li>
+              <li data-filter=".filter-GA">Genetic Algorithms</li>
+              <!--<li data-filter=".filter-NN">Neural Networks</li>-->
+              <li data-filter=".filter-EL">Electronics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Unity filter-GA">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <video autoplay muted loop class="img-fluid" alt="">
+                  <source src="assets/vid/mazeGA.mp4" type="video/mp4"></video>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/MazeWalker-GA" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Unity filter-GA">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <video autoplay muted loop class="img-fluid" alt="">
+                  <source src="assets/vid/platformGA.mp4" type="video/mp4"></video>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/StayOnPlatform-GA" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Unity">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <video autoplay muted loop class="img-fluid" alt="">
+                  <source src="assets/vid/goap.mp4" type="video/mp4"></video>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/GOAP-BasicWorkingHospital" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Unity">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <video autoplay muted loop class="img-fluid" alt="">
+                  <source src="assets/vid/steeringCar.mp4" type="video/mp4"></video>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/SteeringBehaviorAI" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Unity filter-EL">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <img src="https://user-images.githubusercontent.com/36446402/111867714-d582fe00-899b-11eb-89fe-d23b2482b60d.gif" id="gif" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/Vulkan" target="_blanks"><i class="bx bx-link"></i></a>
+                <a href="assets/img/achievements/vulkan.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Finished in Top 15 teams internationally at MakeMIT 2021, held in spring at Massachusetts Institute of Technology. Worked on the hardware and mecanum wheel based motion-planning algorithm for a creative and compact wall painting robot that harnesses the power of vacuum and IoT to help make your walls beautiful."><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Python">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <img src="assets/img/bluebot.png" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/BlueBot" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-JS">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <video autoplay muted loop class="img-fluid" alt="">
+                  <source src="assets/vid/pacman2.mp4" type="video/mp4"></video>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/PacMan" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Python">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <img src="assets/img/scytale.png" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/Project_Scytale" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Unity">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <video autoplay muted loop class="img-fluid" alt="">
+                  <source src="assets/vid/arachnida.mp4" type="video/mp4"></video>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/Arachnida" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Unity">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <img src="https://raw.githubusercontent.com/7divs7/Pumpkin-Hunt/main/pumpkin_hunt.gif" id="gif" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/Pumpkin-Hunt" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-JS">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <video autoplay muted loop class="img-fluid" alt="">
+                  <source src="assets/vid/brick.mp4" type="video/mp4"></video>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/Brick-Breaker" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Python">
+            <div class="portfolio-wrap">
+              <div id="vid1" class="align-items-left">
+                <video autoplay muted loop class="img-fluid" alt="">
+                  <source src="assets/vid/crash.mp4" type="video/mp4"></video>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://github.com/7divs7/Crash" target="_blanks"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Research Publications</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 icon-box" data-aos="fade-up">
+            <div class="icon sc"><i class="bi bi-key"></i></div>
+            <h4 class="title"><a href="https://arxiv.org/abs/2008.05290" target="_blank">SCYTALE - AN EVOLUTIONARY CRYPTOSYSTEM</a></h4>
+            <p class="title date">Published: 7 August, 2020</p>
+            <p class="description"><strong>Journal:</strong> <i>International Journal of Computer Science and Network, Volume 9, Issue 4</i></p>
+            <p class="description"><strong>Authors:</strong> <i>Unnikrishnan Menon, Atharva Hudlikar and Divyani Panda</i></p>
+            <p class="description">With the advent of quantum computing, and other advancements in computation and processing capabilities of modern systems, there arises a need to develop new trapdoor functions that will serve as the foundation for a new generation of encryption schemes. This paper explores the possibility of one such potential trapdoor function using concepts stemming from Reversible Cellular Automata (RCA) -- specifically, the Critter's Rule set up in a Margolus Neighborhood. The proposed block encryption algorithm discusses how sensitive data can be manipulated and converted efficiently into a two dimensional sequence of bits, that can be iteratively evolved using the rules of the RCA and a private key to achieve a desirable level of encryption within a reasonable runtime. The performance benchmark and analysis results exemplify how well the proposed encryption algorithm stands against different forms of attacks.</p>
+          </div>
+          <div class="col-lg-6 icon-box" data-aos="fade-up">
+            <div class="icon ca"><i class="bx bx-car"></i></div>
+            <h4 class="title"><a href="http://www.internationaljournalssrg.org/IJME/paper-details?Id=337" target="_blank">DESIGN AND EVALUATION OF ELECTRIC BUS SYSTEMS FOR METROPOLITAN CITIES</a></h4>
+            <p class="title date">Published: 26 October, 2020</p>
+            <p class="description"><strong>Journal:</strong> <i>SSRG International Journal of Mechanical Engineering 7(10), 16-23</i></p>
+            <p class="description"><strong>Authors:</strong> <i>Unnikrishnan Menon and Divyani Panda</i></p>
+            <p class="description">Over the past decade, most of the metropolitan cities across the world have been witnessing a degrading trend in air quality index. Exhaust emission data observations show that promotion of public transport could be a potential way out of this gridlock. Due to environmental concerns, numerous public transport authorities harbor a great interest in introducing zeroemission electric buses. A shift from conventional diesel buses to electric buses comes with several benefits in terms of reduction in local pollution, noise, and fuel consumption. This paper proposes the relevant vehicle technologies, powertrain, and charging systems, which, in combination, provides a comprehensive methodology to design an Electric Bus that can be deployed in metropolitan cities to mitigate emission concerns.</p>
+          </div>
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Pacman Section ======= -->
+    <section id="pacman-other" class="pacman-other">
+      <div class="path">
+        <div class="pacman"></div>
+        <div class="ghost gre">
+          <div class="eyes"></div>
+          <div class="skirt"></div>
+        </div>
+      </div>
+    </section><!-- End Pacman Section -->
+
+
+    <!-- ======= Achievements Section ======= -->
+    <section id="achievements" class="achievements">
+  
+      <div class="container">
+        <div class="section-title">
+          <h2>Achievements</h2>
+        </div>
+
+        <div class="row achievements-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 achievements-item filter-app">
+            <div class="achievements-wrap">
+              <img src="assets/img/achievements/gcp.png" class="img-fluid" alt="">
+              <div class="achievements-links">
+                <a href="assets/img/achievements/gcp-cert.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Google Cloud Certified Associate Cloud Engineer"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 achievements-item filter-app">
+            <div class="achievements-wrap">
+              <img src="assets/img/achievements/spot.png" class="img-fluid" alt="">
+              <div class="achievements-links">
+                <a href="assets/img/achievements/spot-pic1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Received a Spot Award from Alka Kushwaha, Senior Manager (Cyber Risk Services) at Deloitte, for my performance in the project"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/achievements/spot-pic2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Received a shout out from my former team member, Bryan Curl, Senior Penetration Tester, for my work in the project"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 achievements-item filter-app">
+            <div class="achievements-wrap">
+              <img src="assets/img/achievements/makemit.png" class="img-fluid" alt="">
+              <div class="achievements-links">
+                <a href="assets/img/achievements/vulkan.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Finished in Top 15 teams internationally at MakeMIT 2021, held in spring at Massachusetts Institute of Technology. Worked on the hardware and mecanum wheel based motion-planning algorithm for a creative and compact wall painting robot that harnesses the power of vacuum and IoT to help make your walls beautiful."><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 achievements-item filter-app">
+            <div class="achievements-wrap">
+              <img src="assets/img/achievements/hackmit.png" class="img-fluid" alt="">
+              <div class="achievements-links">
+                <a href="assets/img/achievements/hackmit_pic.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Winner of Urban Innovation Track at HackMIT 2020, held in the fall at Massachusetts Institute of Technology."><i class="bx bx-plus"></i></a>
+                <a href="https://youtu.be/VqeOQ7ygkRY?t=3528" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 achievements-item filter-app">
+            <div class="achievements-wrap">
+              <img src="assets/img/achievements/vitmake.png" class="img-fluid" alt="">
+              <div class="achievements-links">
+                <a href="assets/img/achievements/vitmake-pic.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Battery Parameter Monitoring: Worked on an IoT based project that monitors the battery parameters(current, voltage, temperature) in an Electric Vehicle."><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 achievements-item filter-app">
+            <div class="achievements-wrap">
+              <img src="assets/img/achievements/merit.png" class="img-fluid" alt="">
+              <div class="achievements-links">
+                <a href="assets/img/achievements/merit-cert.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Received VIT Merit Scholarship for securing the 7th rank in my specialization(EEE) branch (2017-18)"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Achievements Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <!--<div class="swiper-wrapper">-->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Divyani is a great security analyst and penetration tester to work with. I recently collaborated with her on a long-term project, and she very quickly learned to use the tools in our pentesting toolkit. She was thrown into our project and almost immediately began discovering critical vulnerabilities in our client's environment and creative ways to bypass existing security mechanisms. She is great at working with developers and security personnel alike to understand what is happening under the hood of an application, and I would gladly recommend her to any team looking for a smart security analyst that is able to quickly get up to speed and adapt as circumstances and environments change.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jfif" class="testimonial-img" alt="">
+                <h3>Bryan Curl</h3>
+                <h4>Cybersecurity Consultant, Penetration Tester at Coalfire</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        <!--</div>-->
+
+      </div>
+    
+    </section><!-- End Testimonials Section -->
+
+   
+  
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Work Address:</h4>
+                <p>Deloitte, Block "C" Divyasree Technopolis,
+                  Survey No: 123 &132/2, Yemlur Post,
+                  Yemlur, Off Old Airport Road, Bangalore,
+                  Karnataka
+                  560037</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>divyani.panda@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>(+91) 9110498134</p>
+              </div>
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3810761089712!2d77.68817045056699!3d12.947449818865724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b7c052d517%3A0xab00dad179a41708!2sDeloitte!5e0!3m2!1sen!2sin!4v1640769044397!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px; filter: invert(90%)" allowfullscreen></iframe>
+            </div>
+
+          </div>
+          </form>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form id="contact-form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input type="hidden" name="contact_number">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="user_name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="user_email" class="form-control" name="_replyto" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="sent-message" id="msg">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button onclick="change()" type="submit" value="Send">Send Message</button></div>
+
+              <script>
+                function change() {
+                  document.getElementById("msg").style.display = "block";
+                }
+              </script>
+            </form>
+
+            
+
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          <script type="text/javascript">
+              (function() {
+                  // https://dashboard.emailjs.com/admin/integration
+                  emailjs.init('user_ev5UTPECFYAYVe8LLV1Xq');
+              })();
+          </script>
+          <script type="text/javascript">
+              window.onload = function() {
+                  document.getElementById('contact-form').addEventListener('submit', function(event) {
+                      event.preventDefault();
+                      // generate a five digit number for the contact_number variable
+                      this.contact_number.value = Math.random() * 100000 | 0;
+                      // these IDs from the previous steps
+                      emailjs.sendForm('service_xvw2uuw', 'template_zd4f0zc', this)
+                          .then(function() {
+                              console.log('SUCCESS!');
+                              document.getElementById("contact-form").reset();
+                          }, function(error) {
+                              console.log('FAILED...', error);
+                          });
+                  });
+              }
+          </script>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+    
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!--<footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">-->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+       <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>--><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+/*--------------------------------------------------------------
+# PACMAN
+--------------------------------------------------------------*/
+
+#pacman-anim {
+    background: rgb(25, 49, 184);
+    animation: blinkySection 1.5s linear infinite;
+}
+#pacman-other {
+    background: rgb(238, 22, 105);
+    animation: blinkySectionOther 1.5s linear infinite;
+}
+@keyframes blinkySection {
+    50% {
+        background: rgb(137, 135, 230);
+    }
+}
+@keyframes blinkySectionOther {
+    50% {
+        background: rgb(116, 202, 138);
+    }
+}
+
+.path {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.path::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 12px dotted white;
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    margin-top: -6px;
+}
+
+.pacman {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: -20%;
+    animation: moveForward 5s linear infinite;
+    animation-delay: 1s;
+}
+.pacman::before, .pacman::after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    border: solid 30px yellow;
+    margin-top: -30px;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: mouthTop 0.7s ease infinite;
+}
+.pacman::after {
+    border-color: yellow;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: mouthBottom 0.7s ease infinite;
+}
+@keyframes mouthTop {
+    50% {
+        transform: rotate(43deg);
+    }
+}
+@keyframes mouthBottom {
+    50% {
+        transform: rotate(-43deg);
+    }
+}
+@keyframes moveForward {
+    0% {
+        left: -10%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.ghost {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 20%;
+    height: 70px;
+    width: 60px;
+    margin-top: -35px;
+    background: red;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    animation: moveForward 5s linear infinite, blinky 0.3s linear infinite;
+}
+
+.gre {
+    animation: moveForward 5s linear infinite, blinkyNext 0.3s linear infinite;
+    background: blue;
+}
+
+.ghost::before, .ghost::after {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 25px;
+    width: 20px;
+    border-radius: 100%;
+    top: 15px;
+    left: 4px;
+}
+.ghost::after {
+    left: 28px;
+}
+@keyframes blinky {
+    50% {
+        background: hotpink;
+    }
+}
+
+@keyframes blinkyNext {
+    50% {
+        background: rgb(33, 229, 255);
+    }
+}
+.eyes::before, .eyes::after {
+    content: "";
+    position: absolute;
+    background: blue;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    top: 25px;
+    left: 5px;
+    z-index: 99;
+    animation: peeperLeft 0.7s linear infinite;
+}
+.eyes::after {
+    left: 30px;
+    animation: peeperRight 0.7s linear infinite;
+}
+
+@keyframes peeperLeft {
+    0%, 100% {
+        left: 5px;
+    }
+    50% {
+        left: 12px;
+    }
+}
+@keyframes peeperRight {
+    0%, 100% {
+        left: 30px;
+    }
+    50% {
+        left: 37px;
+    }
+}
+
+.skirt, .skirt::before, .skirt::after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid 10px #333;
+    border-top-color: transparent;
+    bottom: -10px;
+}
+.skirt::before {
+  content: "";
+  left: 10px;
+}
+.skirt::after {
+    content: "";
+    left: 30px;
+  }
+
+
+/*--------------------------------------------------------------
+# MONSTER-PEEKABOO
+--------------------------------------------------------------*/
+#monster-peekaboo {
+    position: fixed;
+    bottom: 50px;
+    left: -100px;
+    animation: peek 20s ease;
+    animation-delay: 5s;
+    animation-iteration-count: 3;
+}
+@keyframes peek {
+    0% {
+        left: -100px;
+    }
+    25% {
+        left: 10px;
+        transform: rotate(20deg);
+    }
+    50% {
+        left: -100px;
+        transform: rotate(-20deg);
+    }
+    100% {
+        left: -100px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# MONSTER-SLIDE
+--------------------------------------------------------------*/
+#monster-slide {
+    position: fixed;
+    top: -110px;
+    left: 240px;
+    animation: slider 10s linear;
+    animation-delay: 30s;
+}
+@keyframes slider {
+    0% {
+        top: -110px;
+    }
+    50% {
+        top: 300px;
+    }
+    100% {
+        top: 900px;
+    }
+}
+
+#bg69 {
+    position: fixed;
+    left: 50px;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.17;
+  }
+
+#myVideo {
+    position: relative;
+    left: 40px;
+}
+  
+#gif {
+    position: relative;
+    height: 170px;
+    width: 500px;
+}
+.stack-top{
+    z-index: 100;
+    position: relative;
+    bottom: 500px;
+    right: 400px;
+}
