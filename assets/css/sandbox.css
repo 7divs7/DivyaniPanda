@@ -246,6 +246,8 @@
 
 #myVideo {
     position: relative;
+    width: 100%;
+    height: auto;
     left: 40px;
 }
   
