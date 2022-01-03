@@ -1,3 +1,3 @@
 # DivyaniPanda
 
-[Click Here](https://7divs7.github.io/DivyaniPanda) to view my portfolio!
+[Click Here](https://www.divyanipanda.com/) to view my portfolio!
