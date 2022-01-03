@@ -191,8 +191,8 @@
     bottom: 50px;
     left: -100px;
     animation: peek 20s ease;
-    animation-delay: 5s;
-    animation-iteration-count: 3;
+    animation-delay: 5s; 
+    animation-iteration-count: 3; 
 }
 @keyframes peek {
     0% {
@@ -218,7 +218,7 @@
 #monster-slide {
     position: fixed;
     top: -110px;
-    left: 240px;
+    left: 14%;
     animation: slider 10s linear;
     animation-delay: 30s;
 }
