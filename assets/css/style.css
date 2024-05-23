@@ -414,6 +414,17 @@ section {
   color: rgba(245, 245, 245, 0.788);
 }
 
+@keyframes wave {
+  0% { transform: rotate(10deg); }
+  50% { transform: rotate(40deg); }
+  100% { transform: rotate(10deg); }
+}
+
+.hand {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -468,10 +479,10 @@ section {
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
-.facts .count-box a:hover {
-  color: #1f5297
-}
 
+.facts .count-box a:hover {
+  color: #4ad983;
+}
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
