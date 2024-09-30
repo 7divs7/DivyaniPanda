@@ -257,5 +257,5 @@
 
 
 function viewResume() {
-  window.open("https://drive.google.com/file/d/1ZpsY6S3-f84AfbaKUEBqrOmdggfb4v94/view?usp=sharing");
+  window.open("https://drive.google.com/file/d/1-ez0hgmHSouB8CpqnLCPamLX3BthUBej/view?usp=sharing");
 }
